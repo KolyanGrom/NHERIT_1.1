@@ -10,6 +10,7 @@ public class Todos {
         tmp[tmp.length - 1] = task;
         return tmp;
     }
+
     public void add(Task task) {
         tasks = addToArray(tasks, task);
     }
@@ -17,6 +18,7 @@ public class Todos {
     public Task[] findAll() {
         return tasks;
     }
+
     public Task[] search(String query) {
         Task[] result = new Task[0];
         for (Task task : tasks) {
